@@ -9,7 +9,7 @@ const resources = [
   {
     icon: FileText,
     title: "Marketing Assets",
-    description: "A collection of brand identity and marketing materials to support Library One in your library!",
+    description: "A collection of brand identity and marketing materials to support LibraryOne in your library!",
     link: "/resources/marketing",
     color: "from-primary to-primary/80",
   },
@@ -22,8 +22,8 @@ const resources = [
   },
   {
     icon: Video,
-    title: "Library One Videos",
-    description: "Interested in Library One for your library? Watch our overview video and recorded webinars!",
+    title: "LibraryOne Videos",
+    description: "Interested in LibraryOne for your library? Watch our overview video and recorded webinars!",
     link: "/resources/videos",
     color: "from-primary to-accent",
   },
@@ -56,7 +56,7 @@ const Resources = () => {
                 Resources
               </h1>
               <p className="font-body text-lg text-card/80 max-w-xl">
-                Everything you need to get the most out of Library One. From marketing 
+                Everything you need to get the most out of LibraryOne. From marketing 
                 materials to training videos, we've got you covered.
               </p>
             </div>
@@ -154,7 +154,7 @@ const Resources = () => {
               Need Help Getting Started?
             </h2>
             <p className="font-body text-muted-foreground mb-8 max-w-lg mx-auto">
-              Our support team is ready to assist you with any questions about Library One.
+              Our support team is ready to assist you with any questions about LibraryOne.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/contact">

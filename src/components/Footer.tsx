@@ -1,21 +1,32 @@
 import { Link } from "react-router-dom";
-import { BookOpen, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
+import {
+  BookOpen,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Youtube,
+  Instagram,   
+} from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     solutions: [
-      { name: "Digital Library", path: "/solutions" },
-      { name: "eBooks & Audiobooks", path: "/solutions" },
-      { name: "Collection Management", path: "/solutions" },
-      { name: "Analytics Dashboard", path: "/solutions" },
+      { name: "Boundless", path: "/boundless" },
+      { name: "Digital Content", path: "/digital-content" },
+      { name: "Founding Principles", path: "/founding-principles" },
+      { name: "TS 360", path: "/title-source-360" },
     ],
     resources: [
-      { name: "Marketing Assets", path: "/resources" },
-      { name: "Training Videos", path: "/resources" },
-      { name: "FAQs", path: "/resources" },
-      { name: "Help Center", path: "/resources" },
+      { name: "PressReader", path: "/press-reader" },
+      { name: "Press Release", path: "/press-releases" },
+      { name: "Career Jobs", path: "/careers" },
+      { name: "Webinar", path: "/webinar" },
+      { name: "Rotating Reads", path: "/rotating-reads" },
     ],
     company: [
       { name: "About Us", path: "/about" },
@@ -24,11 +35,18 @@ const Footer = () => {
       { name: "Partners", path: "/about" },
     ],
     legal: [
-      { name: "Privacy Policy", path: "/privacy" },
-      { name: "Terms of Service", path: "/terms" },
-      { name: "Cookie Policy", path: "/cookies" },
+      { name: "Privacy Policy", path: "/privacy-policy" },
+      { name: "Terms and Conditions", path: "/terms-and-conditions" },
     ],
   };
+
+  const socialLinks = [
+    { name: "Facebook", icon: Facebook, href: "#" },
+    { name: "X (Twitter)", icon: Twitter, href: "#", label: "X (Twitter)" },
+    { name: "Instagram", icon: Instagram, href: "#" },
+    { name: "LinkedIn", icon: Linkedin, href: "#" },
+    { name: "YouTube", icon: Youtube, href: "#" },
+  ];
 
   return (
     <footer className="bg-foreground text-card">
@@ -43,30 +61,56 @@ const Footer = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-xl font-bold text-card leading-tight">
-                  Library One
+                  LibraryOne
                 </span>
                 <span className="text-xs text-card/60 font-body -mt-0.5">
-                  Digital Solutions
+                  Digital Inc
                 </span>
               </div>
             </Link>
             <p className="text-card/70 font-body mb-6 max-w-md">
-              Empowering libraries with innovative digital solutions. Access millions of eBooks, 
+              Empowering libraries with innovative digital solutions. Access millions of eBooks,
               audiobooks, and more with our comprehensive library management platform.
             </p>
+
+            {/* ✅ Social icons with trending hover effects */}
             <div className="flex items-center gap-4">
-              <a href="#" className="p-2 rounded-full bg-card/10 hover:bg-card/20 transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 rounded-full bg-card/10 hover:bg-card/20 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 rounded-full bg-card/10 hover:bg-card/20 transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 rounded-full bg-card/10 hover:bg-card/20 transition-colors">
-                <Youtube className="w-5 h-5" />
-              </a>
+              {socialLinks.map(({ name, icon: Icon, href, label }) => (
+                <a
+                  key={name}
+                  href={href}
+                  aria-label={label || name}
+                  title={label || name}
+                  className="
+                    group relative p-2.5 rounded-full
+                    bg-card/10
+                    backdrop-blur
+                    transition-all duration-300
+                    hover:bg-gradient-to-tr hover:from-primary hover:to-purple-500
+                    hover:-translate-y-1 hover:scale-110
+                    hover:shadow-[0_0_18px_rgba(96,165,250,0.6)]
+                  "
+                >
+                  <Icon
+                    className="
+                      w-5 h-5
+                      transition-transform duration-300
+                      group-hover:scale-110
+                      group-hover:text-white
+                    "
+                  />
+                  {/* small glowing ring effect */}
+                  <span
+                    className="
+                      pointer-events-none
+                      absolute inset-0 rounded-full
+                      opacity-0 group-hover:opacity-100
+                      transition-opacity duration-300
+                      ring-2 ring-white/40
+                    "
+                  />
+                </a>
+              ))}
             </div>
           </div>
 
@@ -119,8 +163,8 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary" />
                 <span className="text-card/70 font-body text-sm">
-                  2550 West Tyvola Road<br />
-                  Charlotte, NC 28217
+                  3540 Toringdon Way, Suite 200<br />
+                  #391 Charlotte, NC 28277
                 </span>
               </li>
             </ul>
@@ -133,7 +177,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-card/60 font-body text-sm">
-              © {currentYear} Library One. All Rights Reserved.
+              © {currentYear} LibraryOne. All Rights Reserved.
             </p>
             <div className="flex items-center gap-6">
               {footerLinks.legal.map((link) => (

@@ -23,7 +23,7 @@ const CTASection = () => {
             Ready to Transform Your Library?
           </h2>
           <p className="font-body text-lg md:text-xl text-card/80 mb-10 max-w-xl mx-auto">
-            Join thousands of libraries already using Library One to deliver 
+            Join thousands of libraries already using LibraryOne to deliver 
             exceptional digital experiences to their patrons.
           </p>
 

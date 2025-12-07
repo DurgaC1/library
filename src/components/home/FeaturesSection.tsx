@@ -46,7 +46,7 @@ const FeaturesSection = () => {
             Everything Your Library Needs
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            Library One offers comprehensive digital solutions designed to help you 
+            LibraryOne offers comprehensive digital solutions designed to help you 
             easily manage your collections and serve your patrons efficiently.
           </p>
         </div>

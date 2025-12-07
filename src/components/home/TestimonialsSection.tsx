@@ -2,17 +2,17 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "We are loving Library One here, and we would all like to compliment you on your amazing fill rate. Lightning fast is how I would describe it. Much, much faster than other vendors.",
+    quote: "We are loving LibraryOne here, and we would all like to compliment you on your amazing fill rate. Lightning fast is how I would describe it. Much, much faster than other vendors.",
     author: "Robert Colbaugh",
     role: "Washington County Public Library, Abingdon, VA",
   },
   {
-    quote: "I love Library One. I really like the inventory/in-stock button…and the fulfillment accuracy is tremendous. No complaints!",
+    quote: "I love LibraryOne. I really like the inventory/in-stock button…and the fulfillment accuracy is tremendous. No complaints!",
     author: "Carson Moss",
     role: "The Strand, New York City, NY",
   },
   {
-    quote: "I really enjoyed using Library One. It has a lot of very helpful features and I look forward to getting more experience with all the bells and whistles there.",
+    quote: "I really enjoyed using LibraryOne. It has a lot of very helpful features and I look forward to getting more experience with all the bells and whistles there.",
     author: "Martha Brumfield",
     role: "Santa Rosa County Library System",
   },
@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
             Trusted by Libraries Nationwide
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            See what librarians across the country are saying about Library One.
+            See what librarians across the country are saying about LibraryOne.
           </p>
         </div>
 

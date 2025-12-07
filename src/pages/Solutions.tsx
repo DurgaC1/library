@@ -66,7 +66,7 @@ const Solutions = () => {
                 Complete Library Solutions
               </h1>
               <p className="font-body text-lg text-card/80 max-w-xl mx-auto">
-                From digital content to analytics, Library One provides everything 
+                From digital content to analytics, LibraryOne provides everything 
                 your library needs to thrive in the digital age.
               </p>
             </div>
@@ -126,7 +126,7 @@ const Solutions = () => {
                 Ready to Get Started?
               </h2>
               <p className="font-body text-lg text-muted-foreground mb-8">
-                Schedule a demo to see how Library One can transform your library's digital experience.
+                Schedule a demo to see how LibraryOne can transform your library's digital experience.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link to="/demo">

@@ -36,7 +36,7 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="animate-fade-up-delay-2 font-body text-lg md:text-xl text-card/80 mb-10 max-w-xl">
-            Library One is a dynamic, state-of-the-art digital library platform. 
+            LibraryOne is a dynamic, state-of-the-art digital library platform. 
             Access millions of titles and manage your collections with ease.
           </p>
 
