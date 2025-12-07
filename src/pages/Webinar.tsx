@@ -11,7 +11,7 @@ const Webinar = () => {
  
             <p className="text-muted-foreground mb-6">
               Stay informed about the newest updates in digital libraries, collection
-              development strategies, and engagement tools. Library One hosts regular
+              development strategies, and engagement tools. LibraryOne hosts regular
               webinars to support librarians and digital service teams.
             </p>
  
@@ -44,7 +44,7 @@ const Webinar = () => {
  
             <h2 className="text-xl font-semibold mt-6 mb-3 text-foreground">On-Demand Sessions</h2>
             <ul className="list-disc ml-6 text-muted-foreground space-y-2">
-              <li>Getting Started with Library One</li>
+              <li>Getting Started with LibraryOne</li>
               <li>Digital Literacy Programs for All Ages</li>
               <li>Accessibility & Inclusive Design in Digital Libraries</li>
             </ul>

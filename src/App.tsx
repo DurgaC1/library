@@ -22,7 +22,6 @@ import PressReleases from "./pages/PressReleases";
 import DigitalContent from "./pages/DigitalContent";
 import RotatingReads from "./pages/RotatingReads";
 import PressReader from "./pages/PressReader";
-import FoundingPrinciples from "./pages/FoundingPrinciples";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
@@ -54,7 +53,7 @@ const App = () => (
  
           <Route path="/rotating-reads" element={<RotatingReads />} />
           <Route path="/press-reader" element={<PressReader />} />
-          <Route path="/founding-principles" element={<FoundingPrinciples />} />
+          <Route path="/founding-principles" element={<About />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

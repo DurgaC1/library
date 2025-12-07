@@ -20,14 +20,14 @@ const TermsAndConditions = () => {
             <h1 className="text-3xl font-bold mb-6 text-foreground">Terms & Conditions</h1>
  
         <p className="text-muted-foreground mb-6">
-          These Terms & Conditions govern your use of the Library One website,
+          These Terms & Conditions govern your use of the LibraryOne website,
           digital services, and related content. By accessing our platform, you
           agree to comply with the terms outlined below.
         </p>
  
         <h2 className="text-xl font-semibold mt-6 mb-3">1. Use of Services</h2>
         <p className="text-muted-foreground">
-          You may use Library One services only for lawful library, educational,
+          You may use LibraryOne services only for lawful library, educational,
           and informational purposes. Unauthorized distribution, scraping, or
           copying of digital content is prohibited.
         </p>
@@ -49,7 +49,7 @@ const TermsAndConditions = () => {
  
         <h2 className="text-xl font-semibold mt-6 mb-3">4. Limitation of Liability</h2>
         <p className="text-muted-foreground">
-          Library One is not liable for service interruptions, data loss, or
+          LibraryOne is not liable for service interruptions, data loss, or
           external system failures beyond our control.
         </p>
  

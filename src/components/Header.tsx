@@ -43,7 +43,6 @@ const Header = () => {
   const solutionsLinks = [
     { name: "Boundless", path: "/boundless" },
     { name: "Digital Content", path: "/digital-content" },
-    { name: "Founding Principles", path: "/founding-principles" },
     { name: "TS 360", path: "/title-source-360" },
   ];
 

@@ -21,7 +21,7 @@ const PressReleases = () => {
  
         <p className="text-muted-foreground mb-6">
           Stay informed with the latest announcements, product updates, industry
-          insights, and news from <strong>Library One</strong>. Our press releases
+          insights, and news from <strong>LibraryOne</strong>. Our press releases
           highlight key innovations, partnerships, and initiatives that support
           libraries and digital learning communities.
         </p>
@@ -30,7 +30,7 @@ const PressReleases = () => {
  
         <div className="space-y-6">
           <div className="p-4 border rounded-lg bg-background shadow-sm">
-            <h3 className="text-lg font-semibold">Library One Launches New Digital Lending Dashboard</h3>
+            <h3 className="text-lg font-semibold">LibraryOne Launches New Digital Lending Dashboard</h3>
             <p className="text-muted-foreground mt-2">
               A powerful new dashboard designed to help libraries manage digital
               circulation, budget forecasting, patron demand tracking, and more.
@@ -40,7 +40,7 @@ const PressReleases = () => {
  
           <div className="p-4 border rounded-lg bg-background shadow-sm">
             <h3 className="text-lg font-semibold">
-              Library One Expands Partnerships With Global Content Providers
+              LibraryOne Expands Partnerships With Global Content Providers
             </h3>
             <p className="text-muted-foreground mt-2">
               New agreements provide libraries with broader access to eBooks,

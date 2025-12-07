@@ -20,7 +20,7 @@ const FoundingPrinciples = () => {
             <h1 className="text-3xl font-bold mb-6 text-foreground">Founding Principles</h1>
  
         <p className="text-muted-foreground mb-6">
-          Library One was created with a vision to empower libraries with modern,
+          LibraryOne was created with a vision to empower libraries with modern,
           accessible, and impactful digital solutions. These principles continue
           to guide every product, partnership, and innovation we deliver.
         </p>
@@ -47,7 +47,7 @@ const FoundingPrinciples = () => {
         </ul>
  
         <p className="text-muted-foreground mt-6">
-          These principles define who we are and shape the future of Library One.
+          These principles define who we are and shape the future of LibraryOne.
         </p>
           </div>
         </main>

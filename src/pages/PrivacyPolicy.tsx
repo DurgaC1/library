@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
         </p>
  
         <p className="text-muted-foreground mb-6">
-          At <strong>Library One</strong>, we are committed to protecting the
+          At <strong>LibraryOne</strong>, we are committed to protecting the
           privacy of the libraries, institutions, and users who rely on our
           digital solutions. This Privacy Policy explains what information we
           collect, how we use it, and the choices you have when using our website

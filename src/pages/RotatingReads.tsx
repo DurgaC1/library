@@ -21,7 +21,7 @@ const RotatingReads = () => {
  
         <p className="text-muted-foreground mb-6">
           <strong>Rotating Reads</strong> is a fresh and dynamic digital reading
-          collection offered by Library One. It provides patrons with regularly
+          collection offered by LibraryOne. It provides patrons with regularly
           updated selections of popular titles, curated to encourage exploration
           and discovery.
         </p>

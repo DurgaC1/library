@@ -20,7 +20,7 @@ const PressReader = () => {
             <h1 className="text-3xl font-bold mb-6 text-foreground">Press Reader</h1>
  
         <p className="text-muted-foreground mb-6">
-          Library One integrates with <strong>Press Reader</strong> to offer patrons
+          LibraryOne integrates with <strong>Press Reader</strong> to offer patrons
           access to thousands of newspapers and magazines from around the world.
           With easy digital access, readers can stay informed on global news,
           trends, culture, and entertainment.

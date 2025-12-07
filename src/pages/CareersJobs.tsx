@@ -10,7 +10,7 @@ const CareersJobs = () => {
             <h1 className="text-3xl font-bold mb-6 text-foreground">Careers & Jobs</h1>
  
             <p className="text-muted-foreground mb-6">
-              At <strong className="text-foreground">Library One</strong>, we build digital solutions that empower
+              At <strong className="text-foreground">LibraryOne</strong>, we build digital solutions that empower
               libraries and communities. If you're passionate about technology,
               literacy, and meaningful impact, you'll feel right at home here.
             </p>
@@ -43,7 +43,7 @@ const CareersJobs = () => {
  
             <h2 className="text-xl font-semibold mt-6 mb-3 text-foreground">Our Commitment to Inclusion</h2>
             <p className="text-muted-foreground">
-              Library One is an equal opportunity employer. We welcome applicants
+              LibraryOne is an equal opportunity employer. We welcome applicants
               from all backgrounds and identities.
             </p>
           </div>

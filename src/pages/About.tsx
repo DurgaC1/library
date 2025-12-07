@@ -613,6 +613,87 @@ const About = () => {
           </div>
         </section>
 
+        {/* Founding Principles */}
+        <section id="founding-principles" className="py-20 bg-background">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center max-w-2xl mx-auto mb-12">
+              <span className="inline-block text-primary font-body font-semibold text-sm uppercase tracking-wider mb-4">
+                Our Foundation
+              </span>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-3">
+                Founding Principles
+              </h2>
+              <p className="font-body text-sm md:text-base text-muted-foreground">
+                LibraryOne was created with a vision to empower libraries with modern,
+                accessible, and impactful digital solutions. These principles continue
+                to guide every product, partnership, and innovation we deliver.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-2xl border border-border card-elevated p-8 md:p-10">
+              <h3 className="font-display text-xl md:text-2xl font-semibold text-foreground mb-6">
+                Our Core Principles
+              </h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                  <div>
+                    <h4 className="font-display text-lg font-semibold text-foreground mb-1">
+                      Access for All
+                    </h4>
+                    <p className="font-body text-sm md:text-base text-muted-foreground">
+                      Ensure digital reading is available to every community.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                  <div>
+                    <h4 className="font-display text-lg font-semibold text-foreground mb-1">
+                      Partnership With Libraries
+                    </h4>
+                    <p className="font-body text-sm md:text-base text-muted-foreground">
+                      Collaborate closely with librarians to understand real needs.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                  <div>
+                    <h4 className="font-display text-lg font-semibold text-foreground mb-1">
+                      Innovation With Purpose
+                    </h4>
+                    <p className="font-body text-sm md:text-base text-muted-foreground">
+                      Build technology that simplifies, enhances, and empowers.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                  <div>
+                    <h4 className="font-display text-lg font-semibold text-foreground mb-1">
+                      Respect for Readers
+                    </h4>
+                    <p className="font-body text-sm md:text-base text-muted-foreground">
+                      Protect privacy and support inclusive user experiences.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-border">
+                <p className="font-body text-sm md:text-base text-muted-foreground text-center">
+                  These principles define who we are and shape the future of LibraryOne.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Banner */}
         <section className="py-20 hero-gradient">
           <div className="container mx-auto px-4 text-center">

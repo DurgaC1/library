@@ -20,7 +20,7 @@ const DigitalContent = () => {
             <h1 className="text-3xl font-bold mb-6 text-foreground">Digital Content</h1>
  
         <p className="text-muted-foreground mb-6">
-          <strong>Library One</strong> offers a unified digital content platform for
+          <strong>LibraryOne</strong> offers a unified digital content platform for
           public libraries—supporting eBooks, audiobooks, magazines, newspapers,
           and more. Designed to simplify collection management and enhance patron
           experience, our platform provides seamless access on any device.
