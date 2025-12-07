@@ -8,7 +8,7 @@ import {
   Twitter,
   Linkedin,
   Youtube,
-  Instagram,   
+  Instagram,
 } from "lucide-react";
 
 const Footer = () => {
@@ -19,13 +19,13 @@ const Footer = () => {
       { name: "Boundless", path: "/boundless" },
       { name: "Digital Content", path: "/digital-content" },
       { name: "TS 360", path: "/title-source-360" },
+      { name: "PressReader", path: "/press-reader" },
+      { name: "Rotating Reads", path: "/rotating-reads" },
     ],
     resources: [
-      { name: "PressReader", path: "/press-reader" },
       { name: "Press Release", path: "/press-releases" },
-      { name: "Career Jobs", path: "/careers" },
+      { name: "Careers Jobs", path: "/careers" },
       { name: "Webinar", path: "/webinar" },
-      { name: "Rotating Reads", path: "/rotating-reads" },
     ],
     company: [
       { name: "About Us", path: "/about" },
@@ -72,7 +72,7 @@ const Footer = () => {
               audiobooks, and more with our comprehensive library management platform.
             </p>
 
-            {/* ✅ Social icons with trending hover effects */}
+            {/* Social icons with hover effects */}
             <div className="flex items-center gap-4">
               {socialLinks.map(({ name, icon: Icon, href, label }) => (
                 <a
@@ -98,7 +98,6 @@ const Footer = () => {
                       group-hover:text-white
                     "
                   />
-                  {/* small glowing ring effect */}
                   <span
                     className="
                       pointer-events-none

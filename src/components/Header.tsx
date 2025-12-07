@@ -14,10 +14,16 @@ const Header = () => {
   // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (solutionsRef.current && !solutionsRef.current.contains(event.target as Node)) {
+      if (
+        solutionsRef.current &&
+        !solutionsRef.current.contains(event.target as Node)
+      ) {
         setSolutionsOpen(false);
       }
-      if (resourcesRef.current && !resourcesRef.current.contains(event.target as Node)) {
+      if (
+        resourcesRef.current &&
+        !resourcesRef.current.contains(event.target as Node)
+      ) {
         setResourcesOpen(false);
       }
     };
@@ -40,23 +46,31 @@ const Header = () => {
     { name: "Contact", path: "/contact" },
   ];
 
+  // ✅ Updated to match reference
   const solutionsLinks = [
     { name: "Boundless", path: "/boundless" },
     { name: "Digital Content", path: "/digital-content" },
     { name: "TS 360", path: "/title-source-360" },
-  ];
-
-  const resourcesLinks = [
     { name: "PressReader", path: "/press-reader" },
-    { name: "Press Release", path: "/press-releases" },
-    { name: "Career Jobs", path: "/careers" },
-    { name: "Webinar", path: "/webinar" },
     { name: "Rotating Reads", path: "/rotating-reads" },
   ];
 
+  const resourcesLinks = [
+    { name: "Press Release", path: "/press-releases" },
+    { name: "Careers Jobs", path: "/careers" },
+    { name: "Webinar", path: "/webinar" },
+  ];
+
   const isActive = (path: string) => location.pathname === path;
-  const isSolutionsActive = solutionsLinks.some((link) => isActive(link.path));
-  const isResourcesActive = resourcesLinks.some((link) => isActive(link.path));
+
+  // ✅ Include /solutions route itself as active
+  const isSolutionsActive =
+    location.pathname === "/solutions" ||
+    solutionsLinks.some((link) => isActive(link.path));
+
+  const isResourcesActive = resourcesLinks.some((link) =>
+    isActive(link.path)
+  );
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-border">
@@ -93,15 +107,15 @@ const Header = () => {
               </Link>
             ))}
 
-            {/* Solutions Dropdown */}
-            <div className="relative" ref={solutionsRef}>
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setSolutionsOpen(!solutionsOpen);
-                  setResourcesOpen(false);
-                }}
+            {/* ✅ Solutions Dropdown (hover + Link, like reference) */}
+            <div
+              className="relative"
+              ref={solutionsRef}
+              onMouseEnter={() => setSolutionsOpen(true)}
+              onMouseLeave={() => setSolutionsOpen(false)}
+            >
+              <Link
+                to="/solutions"
                 className={`px-4 py-2 rounded-md text-sm font-medium font-body transition-colors flex items-center gap-1 ${
                   isSolutionsActive
                     ? "text-primary bg-primary/5"
@@ -110,9 +124,11 @@ const Header = () => {
               >
                 Solutions
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform ${solutionsOpen ? "rotate-180" : ""}`}
+                  className={`w-4 h-4 transition-transform ${
+                    solutionsOpen ? "rotate-180" : ""
+                  }`}
                 />
-              </button>
+              </Link>
               {solutionsOpen && (
                 <div className="absolute top-full left-0 mt-1 w-56 bg-card border border-border rounded-lg shadow-lg py-2 z-50 animate-fade-in">
                   {solutionsLinks.map((link) => (
@@ -133,7 +149,7 @@ const Header = () => {
               )}
             </div>
 
-            {/* Resources Dropdown */}
+            {/* Resources Dropdown (click, same as reference) */}
             <div className="relative" ref={resourcesRef}>
               <button
                 type="button"
@@ -150,7 +166,9 @@ const Header = () => {
               >
                 Resources
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform ${resourcesOpen ? "rotate-180" : ""}`}
+                  className={`w-4 h-4 transition-transform ${
+                    resourcesOpen ? "rotate-180" : ""
+                  }`}
                 />
               </button>
               {resourcesOpen && (
@@ -220,9 +238,17 @@ const Header = () => {
                 </Link>
               ))}
 
-              {/* Mobile Solutions */}
+              {/* ✅ Mobile Solutions (with main /solutions link and updated list) */}
               <div className="px-4 py-2">
-                <div className="text-sm font-semibold text-foreground mb-2">Solutions</div>
+                <Link
+                  to="/solutions"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`text-sm font-semibold text-foreground mb-2 block ${
+                    isActive("/solutions") ? "text-primary" : ""
+                  }`}
+                >
+                  Solutions
+                </Link>
                 <div className="flex flex-col gap-1 ml-4">
                   {solutionsLinks.map((link) => (
                     <Link
@@ -243,7 +269,9 @@ const Header = () => {
 
               {/* Mobile Resources */}
               <div className="px-4 py-2">
-                <div className="text-sm font-semibold text-foreground mb-2">Resources</div>
+                <div className="text-sm font-semibold text-foreground mb-2">
+                  Resources
+                </div>
                 <div className="flex flex-col gap-1 ml-4">
                   {resourcesLinks.map((link) => (
                     <Link
