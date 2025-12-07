@@ -37,11 +37,11 @@ const TS360 = () => {
                   Title Source 360
                 </span>
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-card mb-6">
-                  Smarter Ordering for Physical & Digital Collections
+                  Smarter Ordering for Digital Collections
                 </h1>
                 <p className="font-body text-lg text-card/80 max-w-xl">
                   Title Source 360 is a dynamic, state-of-the-art ordering system by LibraryOne
-                  where you can find all the physical and digital books, plus entertainment titles,
+                  where you can find all the digital books, plus entertainment titles,
                   for your institution. The platform is designed to help you easily find the titles
                   you need and manage your orders more efficiently.
                 </p>
