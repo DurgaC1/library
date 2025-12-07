@@ -24,6 +24,8 @@ import RotatingReads from "./pages/RotatingReads";
 import PressReader from "./pages/PressReader";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import PublicLibraries from "@/pages/help/PublicLibraries";
+import AcademicLibraries from "@/pages/help/AcademicLibraries";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +58,8 @@ const App = () => (
           <Route path="/founding-principles" element={<About />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/public-libraries" element={<PublicLibraries />} />
+          <Route path="/academic-libraries" element={<AcademicLibraries />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
