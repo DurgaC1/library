@@ -52,11 +52,11 @@ const RotatingReads = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2"
             >
-              <Button size="lg" className="group">
+              {/* <Button size="lg" className="group">
                 <FileText className="w-4 h-4 mr-2" />
                 Learn More
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </Button> */}
             </a>
           </div>
         </div>
